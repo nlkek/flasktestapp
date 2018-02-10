@@ -1,0 +1,11 @@
+<!doctype html>
+<form  method=post class=add-entry>
+      <dl>
+        <dt>Enter user's id that you want to delete:
+        <dt><input type=text size=30 name=id>
+        <dt><input type=submit value=delete>
+      </dl>
+</form>
+  {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
+  {% endfor %}

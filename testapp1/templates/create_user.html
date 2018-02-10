@@ -1,0 +1,13 @@
+<!doctype html>
+<form  method=post>
+      <dl>
+        <dt>Name:
+        <dt><input type=text size=30 name=name>
+        <dt>Password:
+        <dt><input type=text size=30 name=password>
+        <dt><input type=submit value=add>
+      </dl>
+</form>
+  {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
+  {% endfor %}
